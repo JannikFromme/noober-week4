@@ -6,6 +6,14 @@ window.addEventListener('DOMContentLoaded', async function() {
   console.dir(json)
   
   // 🔥 start here: write the recipe (algorithm), then write the code
+
+  // Empty the rides div element
+
+    // Get reference to ride div element
+    let rideElement = document.querySelector(`.rides`)
+
+    // Use innerHTML to empty the div element
+    rideElement.innerHTML =``
   
   // Loop through all available rides  
   for (i = 0; i < json.length; i++) {
